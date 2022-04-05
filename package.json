@@ -1,0 +1,26 @@
+{
+  "name": "harsh-vardhan320-me_buildout_xharktank",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.crio.do/COHORT_ME_BUILDOUT_XHARKTANK_ENROLL_1648956266180/harsh-vardhan320-ME_BUILDOUT_XHARKTANK.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
