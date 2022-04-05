@@ -37,11 +37,11 @@ npm run start
 ## Features
 ### Endpoints 
 
-```http
+```sh
 GET /pitches
 ```
 #### Response
-returns json of all pitches.
+returns json of all pitches in reverse chronological  order.
 
 ```javascript
 [
@@ -69,7 +69,7 @@ returns json of all pitches.
 | 200 | `OK` |
 | 500 | `INTERNAL SERVER ERROR` |
 ---
-```http
+```sh
 GET /pitches/<pitch_id>
 ```
 #### Response
@@ -100,7 +100,7 @@ returns json of a pitch
 | 404 | `NOT FOUND` |
 | 500 | `INTERNAL SERVER ERROR` |
 ---
-```http
+```sh
 POST /pitches
 ```
 #### Response
@@ -116,7 +116,7 @@ returns id of the saved document
 | 400 | `BAD REQUEST` |
 | 500 | `INTERNAL SERVER ERROR` |
 ---
-```http
+```sh
 POST /pitches/<pitch_id>/makeOffer
 ```
 #### Response

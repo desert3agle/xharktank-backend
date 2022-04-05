@@ -30,8 +30,6 @@ exports.getAll = async (req, res) => {
                     equity: 1,
                     offers : {
                         id:"$_id",
-                        _id: 1,
-                        pitchId: 1,
                         investor: 1,
                         amount : 1,
                         equity : 1,
@@ -39,7 +37,7 @@ exports.getAll = async (req, res) => {
                     },
                 },
             },
-        ]).sort({_id: -1});
+        ]).sort({id: -1});
         res.status(200).json(pitches);
     }catch(err){
         res.status(500).type("txt").send(err.message);
@@ -78,8 +76,6 @@ exports.getById = async (req, res) => {
                     equity: 1,
                     offers : {
                         id:"$_id",
-                        _id: 1,
-                        pitchId: 1,
                         investor: 1,
                         amount : 1,
                         equity : 1,
