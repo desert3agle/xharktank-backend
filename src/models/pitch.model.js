@@ -26,9 +26,6 @@ const PitchSchema = new Schema({
         required: true,
         min : 0.0,
         max : 100.0
-    },
-    offers : {
-        type: Array,
     }
 },
     { versionKey: false }
