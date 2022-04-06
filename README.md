@@ -1,6 +1,6 @@
 # :shark: XharkTank 
 
-This is backend for the application XharkTank, provides endpoints to pitch ideas to investors and make offers to entrepreneurs.
+This is backend for the application XharkTank, provides endpoints to pitch ideas to investors and to make counter-offers to entrepreneurs.
 
 - Pitch your one in a million idea to the panel of sharks  :money_with_wings:
 - Invest in the next big thing :chart_with_upwards_trend:
@@ -12,13 +12,13 @@ Live Deployed [here](https://xharktank-harsh-vardhan.herokuapp.com/).
 
 
 - [Node.js](https://nodejs.org/) - evented I/O for the backend
-- [Express](https://www.npmjs.com/package/express) - fast node.js network app framework [@tjholowaychuk]
+- [Express](https://www.npmjs.com/package/express) - fast node.js network app framework
 - [MongoDB](https://www.mongodb.com) - cross-platform document-oriented database program
 
 
 ## Installation
 
-Dillinger requires [Node.js](https://nodejs.org/) v14+ and [MongoDB](https://www.mongodb.com) v4+ to run.
+XharkTank requires [Node.js](https://nodejs.org/) v14+ and [MongoDB](https://www.mongodb.com) v4+ to run.
 
 Install the dependencies and devDependencies.
 ```sh
