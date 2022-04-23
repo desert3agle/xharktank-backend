@@ -103,6 +103,17 @@ returns json of a pitch
 ```sh
 POST /pitches
 ```
+#### Request
+request body
+```javascript
+{
+   "entrepreneur":string,
+   "pitchTitle":string,
+   "pitchIdea":string,
+   "askAmount":float,
+   "equity":float
+}
+  ```
 #### Response
 returns id of the saved document
 ```javascript
@@ -119,6 +130,17 @@ returns id of the saved document
 ```sh
 POST /pitches/<pitch_id>/makeOffer
 ```
+#### Request
+request body
+```javascript
+{
+   "investor":string,
+   "amount":float,
+   "equity":float,
+   "comment":string
+}
+  ```
+
 #### Response
 returns id of the saved document
 ```javascript
