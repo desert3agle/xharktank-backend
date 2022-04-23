@@ -34,8 +34,7 @@ Start the server
 npm run start
 ```
 
-## Features
-### Endpoints 
+## API Documentation
 
 ```sh
 GET /pitches
