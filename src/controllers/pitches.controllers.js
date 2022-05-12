@@ -8,7 +8,7 @@ const ObjectId = require('mongodb').ObjectId;
 * Perform outer join on "pitches" and "offers" collections and
 * Format it according to client specs.
 **/
-exports.getAll = async (req, res) => {
+exports.getPitches = async (req, res) => {
     try{    
         let pitches = await Pitch.aggregate([
             {     
@@ -49,7 +49,7 @@ exports.getAll = async (req, res) => {
 * The function "getById" will get specific pitch from database by id,
 * Format it according to client specs.
 **/
-exports.getById = async (req, res) => {
+exports.getOnePitch = async (req, res) => {
     try{
         let pitch = await Pitch.aggregate([
             {
@@ -94,7 +94,7 @@ exports.getById = async (req, res) => {
 * The function "create" will create a pitch document in pitches collection.
 *
 **/
-exports.create = async (req, res) => {
+exports.addPitch = async (req, res) => {
     try{
         const pitch = new Pitch({
             entrepreneur: req.body.entrepreneur,

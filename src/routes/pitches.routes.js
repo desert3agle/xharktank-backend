@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const pitches = require('../controllers/pitches.controllers');
-const offers = require('../controllers/offers.controllers');
+const { getPitches, getOnePitch, addPitch } = require('../controllers/pitches.controllers');
+const { makeOffer } = require('../controllers/offers.controllers');
 
 
 /**
@@ -9,9 +9,7 @@ const offers = require('../controllers/offers.controllers');
  * @desc      Get all pitches
  * @access    Private
  */
-router.get('/', (req, res) => {
-    pitches.getAll(req,res);
-});
+router.get('/', getPitches);
 
 
 /**
@@ -19,9 +17,7 @@ router.get('/', (req, res) => {
  * @desc      Get a pitch specific to id
  * @access    Public
  */
-router.get('/:id', (req, res) => {
-    pitches.getById(req, res);
-});
+router.get('/:id', getOnePitch);
 
 
 /**
@@ -29,9 +25,7 @@ router.get('/:id', (req, res) => {
  * @desc      Add a pitch
  * @access    Public
  */
-router.post('/', (req, res) => {
-    pitches.create(req, res);
-});
+router.post('/', addPitch);
 
 
 /**
@@ -39,9 +33,7 @@ router.post('/', (req, res) => {
  * @desc      Make offer to a pitch
  * @access    Public
  */
-router.post('/:id/makeOffer', (req, res) => {
-    offers.makeOffer(req, res);
-});
+router.post('/:id/makeOffer', makeOffer);
 
 
 module.exports = router;
