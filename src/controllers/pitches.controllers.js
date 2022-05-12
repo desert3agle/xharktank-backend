@@ -3,11 +3,7 @@ const ObjectId = require('mongodb').ObjectId;
 
 // Controller functions for pitches
 
-/**
-* The function "getAll" will get all the pitches from database ,
-* Perform outer join on "pitches" and "offers" collections and
-* Format it according to client specs.
-**/
+
 exports.getPitches = async (req, res) => {
     try{    
         let pitches = await Pitch.aggregate([
@@ -45,10 +41,6 @@ exports.getPitches = async (req, res) => {
 };
 
 
-/**
-* The function "getById" will get specific pitch from database by id,
-* Format it according to client specs.
-**/
 exports.getOnePitch = async (req, res) => {
     try{
         let pitch = await Pitch.aggregate([
@@ -90,10 +82,6 @@ exports.getOnePitch = async (req, res) => {
     }
 };
 
-/**
-* The function "create" will create a pitch document in pitches collection.
-*
-**/
 exports.addPitch = async (req, res) => {
     try{
         const pitch = new Pitch({
